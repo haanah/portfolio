@@ -1,8 +1,8 @@
-﻿@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+﻿@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
 
 /* 공통 스타일 */
 
-body,ul,li {margin: 0; padding: 0; font-size: 12px; font-family: "맑은 고딕", sans-serif;}
+body,ul,li {margin: 0; padding: 0; font-size: 12px; font-family: "맑은 고딕", 'Maven Pro', sans-serif;}
 a {text-decoration: none; color: #ffffff;}
 ul, li {list-style: none;}
 cf{ content:''; display:block; clear:both; }
@@ -28,58 +28,56 @@ p::-webkit-selection{ background-color:#dddddd; color:#ff0000; }
 p::selection{ background-color:#dddddd; color:#ff0000; }
 
 /* 전체 레이아웃 */
-#wrap{ position:relative; margin:0 auto; width:1200px; min-width:1000px; }
-#header{ width:1200px; height:70px; position:fixed; left:50%; margin-left:-600px; top:35px; z-index:1000; }
+#wrap{ position:relative; margin:0 auto; width:100%; min-width:1400px; }
+#header{ width:100%; height:90px; position:fixed; z-index:1000; background:rgba(255,255,25,0.3); }
 
-#main{ width:1200px; height:950px; position:relative; background:#f7fcff; }
-#profile{ width:1200px; height:1000px; position:relative; background:#f7fcff; }
-#mobile{ width:1200px; height:1000px; position:relative; background:#f7fcff; }
-#adaptive01{ width:1200px; height:1000px; position:relative; background:#f7fcff; }
-#jQuery{ width:1200px; height:1000px; position:relative; background:#f7fcff; }
-#css{ width:1200px; height:1000px; position:relative; background:#f7fcff; }
-#shopping{ width:1200px; height:1000px; position:relative; background:#f7fcff; }
-#graphic{ width:1200px; height:1000px; position:relative; background:#f7fcff; }
-#epilogue{ width:1200px; height:1000px; position:relative; background:#f7fcff; }
-#main>*, #profile>*, #mobile>*, #adaptive01>*, #jQuery>*, #css>*, #shopping>*, #graphic>*, #epilogue>*{ position:absolute; }
+#main{ width:1400px; height:950px; position:relative; background:#f7fcff; }
+#profile{ width:1400px; height:1000px; position:relative; background:#f7fcff; }
+#mobile{ width:1400px; height:1000px; position:relative; background:#f7fcff; }
+#adaptive01{ width:1400px; height:1000px; position:relative; background:#f7fcff; }
+#jQuery{ width:1400px; height:1000px; position:relative; background:#f7fcff; }
+#css{ width:1400px; height:1000px; position:relative; background:#f7fcff; }
+#main>*, #profile>*, #mobile>*, #adaptive01>*, #jQuery>*, #css>*{ position:absolute; }
 
 /* 퀵메뉴 스타일 정의 */
 #floatdiv{ position:absolute; left:0; top:250px; margin-left:10px; }
 #floatdiv ul{ border:0; margin:0; padding:0; }
 #floatdiv ul li{ border:0; margin:0; padding:0; }
 #floatdiv ul li span{ margin:0 0 5px 0; cursor:pointer; }
-#floatdiv ul li #btn01{ display:block; width:40px; height:40px; background:url(../images/button/before/be01.png) no-repeat; }
-#floatdiv ul li #btn02{ display:block; width:40px; height:40px; background:url(../images/button/before/be02.png) no-repeat; }
-#floatdiv ul li #btn03{ display:block; width:40px; height:40px; background:url(../images/button/before/be03.png) no-repeat; }
-#floatdiv ul li #btn04{ display:block; width:40px; height:40px; background:url(../images/button/before/be04.png) no-repeat; }
-#floatdiv ul li #btn05{ display:block; width:40px; height:40px; background:url(../images/button/before/be05.png) no-repeat; }
-#floatdiv ul li #btn06{ display:block; width:40px; height:40px; background:url(../images/button/before/be06.png) no-repeat; }
-#floatdiv ul li #btn07{ display:block; width:40px; height:40px; background:url(../images/button/before/be07.png) no-repeat; }
-#floatdiv ul li #btn08{ display:block; width:40px; height:40px; background:url(../images/button/before/be08.png) no-repeat; }
-#floatdiv ul li #btn09{ display:block; width:40px; height:40px; background:url(../images/button/before/be09.png) no-repeat; }
-#floatdiv ul li:hover #btn01{ background:url(../images/button/after/af01.png) no-repeat; }
-#floatdiv ul li:hover #btn02{ background:url(../images/button/after/af02.png) no-repeat; }
-#floatdiv ul li:hover #btn03{ background:url(../images/button/after/af03.png) no-repeat; }
-#floatdiv ul li:hover #btn04{ background:url(../images/button/after/af04.png) no-repeat; }
-#floatdiv ul li:hover #btn05{ background:url(../images/button/after/af05.png) no-repeat; }
-#floatdiv ul li:hover #btn06{ background:url(../images/button/after/af06.png) no-repeat; }
-#floatdiv ul li:hover #btn07{ background:url(../images/button/after/af07.png) no-repeat; }
-#floatdiv ul li:hover #btn08{ background:url(../images/button/after/af08.png) no-repeat; }
-#floatdiv ul li:hover #btn09{ background:url(../images/button/after/af09.png) no-repeat; }
+#floatdiv ul li #btn01{ display:block; width:40px; height:40px; background:url(../images/button/before/before.png) no-repeat; }
+#floatdiv ul li #btn02{ display:block; width:40px; height:40px; background:url(../images/button/before/before.png) no-repeat; }
+#floatdiv ul li #btn03{ display:block; width:40px; height:40px; background:url(../images/button/before/before.png) no-repeat; }
+#floatdiv ul li #btn04{ display:block; width:40px; height:40px; background:url(../images/button/before/before.png) no-repeat; }
+#floatdiv ul li #btn05{ display:block; width:40px; height:40px; background:url(../images/button/before/before.png) no-repeat; }
+#floatdiv ul li #btn06{ display:block; width:40px; height:40px; background:url(../images/button/before/before.png) no-repeat; }
+#floatdiv ul li #btn07{ display:block; width:40px; height:40px; background:url(../images/button/before/before.png) no-repeat; }
+#floatdiv ul li #btn08{ display:block; width:40px; height:40px; background:url(../images/button/before/before.png) no-repeat; }
+#floatdiv ul li #btn09{ display:block; width:40px; height:40px; background:url(../images/button/before/before.png) no-repeat; }
+#floatdiv ul li:hover #btn01{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li:hover #btn02{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li:hover #btn03{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li:hover #btn04{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li:hover #btn05{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li:hover #btn06{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li:hover #btn07{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li:hover #btn08{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li:hover #btn09{ background:url(../images/button/after/after.png) no-repeat; }
 
-#floatdiv ul li.active #btn01{ background:url(../images/button/after/af01.png) no-repeat; }
-#floatdiv ul li.active #btn02{ background:url(../images/button/after/af02.png) no-repeat; }
-#floatdiv ul li.active #btn03{ background:url(../images/button/after/af03.png) no-repeat; }
-#floatdiv ul li.active #btn04{ background:url(../images/button/after/af04.png) no-repeat; }
-#floatdiv ul li.active #btn05{ background:url(../images/button/after/af05.png) no-repeat; }
-#floatdiv ul li.active #btn06{ background:url(../images/button/after/af06.png) no-repeat; }
-#floatdiv ul li.active #btn07{ background:url(../images/button/after/af07.png) no-repeat; }
-#floatdiv ul li.active #btn08{ background:url(../images/button/after/af08.png) no-repeat; }
-#floatdiv ul li.active #btn09{ background:url(../images/button/after/af09.png) no-repeat; }
+#floatdiv ul li.active #btn01{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li.active #btn02{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li.active #btn03{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li.active #btn04{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li.active #btn05{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li.active #btn06{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li.active #btn07{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li.active #btn08{ background:url(../images/button/after/after.png) no-repeat; }
+#floatdiv ul li.active #btn09{ background:url(../images/button/after/after.png) no-repeat; }
 
 /* 상단 풀다운 메뉴 스타일 */
-#menuWrap{ width:1200px; height:50px; position:relative; left:0px; top:10px; background:#001355; opacity:0.85; border-radius:10px; } 
+#header-inner{ width:1400px; height:90px; position:fixed; left:50%; top:10px; margin-left:-700px; z-index:1000; padding:0 100px; }
+#menuWrap{ width:1400px; height:50px; position:relative; left:0px; top:10px; background:#ffffff; opacity:0.85; border-radius:10px; } 
 #menuWrap .fav{ position:absolute; top:2px; right:20px; display:block; padding:0 4px; font-weight:bold; background-color:#ffffff; color:#26376f; border-radius:2px; }
-#menu{ position:absolute; left:0; top:0; width:1200px; }
+#menu{ position:absolute; left:0; top:0; width:1400px; }
 #menu li{ float:left; padding:0 14px; }
 #menu .mLogo{ padding-left:40px; margin-top:-15px; }
 #menu li a{ display:block; padding:2px 4px; line-height:42px; font-size:1.5em; font-weight:bold; text-align:center; color:#9d9d9d; opacity:1; }
