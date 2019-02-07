@@ -27,7 +27,8 @@ p:-moz-selection{ background-color:#dddddd; color:#ff0000; }
 p::-webkit-selection{ background-color:#dddddd; color:#ff0000; }
 p::selection{ background-color:#dddddd; color:#ff0000; }
 
-/* 전체 레이아웃 */
+/* 전체 레이아웃 min-width:1400px */
+#contents>*{ margin:0 auto; }
 #wrap{ position:relative; margin:0 auto; width:100%; min-width:1400px; }
 #header{ width:100%; height:90px; position:fixed; z-index:1000; background:rgba(255,255,25,0.3); }
 
@@ -78,11 +79,11 @@ p::selection{ background-color:#dddddd; color:#ff0000; }
 #menuWrap{ width:1400px; height:50px; position:relative; left:0px; top:10px; background:#ffffff; opacity:0.85; border-radius:10px; } 
 #menuWrap .fav{ position:absolute; top:2px; right:20px; display:block; padding:0 4px; font-weight:bold; background-color:#ffffff; color:#26376f; border-radius:2px; }
 #menu{ position:absolute; left:0; top:0; width:1400px; }
-#menu li{ float:left; padding:0 14px; }
-#menu .mLogo{ padding-left:40px; margin-top:-15px; }
-#menu li a{ display:block; padding:2px 4px; line-height:42px; font-size:1.5em; font-weight:bold; text-align:center; color:#9d9d9d; opacity:1; }
-#menu li a:hover{ color:#ffffff; text-shadow:0 0 20px #ffffff; }
-#menu .on a{ color:#ffffff; text-shadow:0 0 20px #ffffff; }
+#menu li{ float:left; padding:0 20px; }
+#menu .mLogo{ padding-left:40px; margin-top:-5px; }
+#menu li a{ display:block; font-family:'Maven pro',sans-serif; padding:2px 4px; line-height:42px; font-size:1.5em; font-weight:800; text-align:center; color:#9d9d9d; opacity:1; }
+#menu li a:hover{ color:#222222; text-shadow:0 0 20px #67bc0d; }
+#menu .on a{ color:#222222; text-shadow:0 0 20px #67bc0d; }
 #menu .mLogo a{ padding:0 4px; opacity:1; }
 /* main */
 #main .pLogo{ left:120px; top:300px; }
@@ -153,96 +154,4 @@ p::selection{ background-color:#dddddd; color:#ff0000; }
 #css strong{ font-size:2em; color:#26376f; padding:0 10px 0 0; }
 #css p{ width:500px; margin-top:5px; color:#222222; line-height:1.5em; text-align:justify; }
 #css p .point{ color:#1184e8; font-weight:bold; font-size:1em; font-family:'맑은 고딕', sans-serif; }
-
-/* shopping */
-#shopping > img{ left:3.5%; top:15%; }
-#shopping .shop01{ left:4%; top:23%; }
-#shopping .shop02{ left:4%; top:36%; }
-#shopping .shop03{ left:4%; top:49%; }
-#shopping .shop04{ left:4%; top:62%; }
-#shopping .shopMainImg{ lefT:47.5%; top:22%; width:580px; height:550px; overflow:hidden; overflow-y:scroll; }
-#shopping .iphoneImg{ lefT:73%; top:48.7%; width:152px; height:228px; overflow:hidden; overflow-y:scroll; }
-#shopping .shopMobileImg{ lefT:72%; top:43%; }
-#shopping span{ font-size:2em; color:#0036d9; font-family:'Nanum Pen Script', Cursive; }
-#shopping strong{ font-size:2em; color:#26376f; padding:0 10px 0 0; }
-#shopping p{ width:500px; margin-top:5px; color:#222222; line-height:1.5em; text-align:justify; }
-#shopping p .point{ color:#1184e8; font-weight:bold; font-size:1em; font-family:'맑은 고딕', sans-serif; }
-
-/* 2d graphic */
-#graphic > img{ left:3.5; top:15%; }
-#graphic .graphic01{ left:4%; top:23%; }
-#graphic .graphic02{ left:4%; top:49%; }
-#graphic .graphicImgBox{ left:47.5%; top:21%; width:580px; height:610px; }
-#graphic #graphicImage{ width:580px; height:500px; }
-#graphic #graphicImage p{ display:none; }
-#graphic #graphicImage p img{ width:580px; height:500px; border:0; }
-#graphic #graphicBox{ position:relative; width:580px; height:90px; margin-top:10px; }
-#graphic #graphicBox .left{ position:absolute; left:0; top:0; width:35px; height:40px; padding-top:25px; text-align:left; cursor:pointer; }
-#graphic #graphicBox .right{ position:absolute; right:0; top:0; width:35px; height:40px; padding-top:25px; text-align:right; cursor:pointer; }
-#graphic #graphicBox .graphicImg{ overflow:hidden; position:relative; left:35px; width:510px; height:90px; }
-#graphic #graphicBox .graphicImg ul{ position:absolute; width:1530px; left:-510px; }
-#graphic #graphicBox .graphicImg .thumb{float:left; width:120px; height:90px; margin-left:10px; list-style:none; cursor:pointer; }
-#graphic #graphicBox .graphicImg .first{ margin-left:0; }
-#graphic span{ font-size:2em; color:#0036d9; font-family:'Nanum Pen Script', Cursive; }
-#graphic span{ font-size:2em; color:#0036d9; font-family:'Nanum Pen Script', Cursive; }
-#graphic strong{ font-size:2em; color:#26376f; padding:0 10px 0 0; }
-#graphic p{ width:500px; margin-top:5px; color:#222222; line-height:1.5em; text-align:justify; }
-#graphic p .point{ color:#1184e8; font-weight:bold; font-size:1em; font-family:'맑은 고딕', sans-serif; }
-
-/* epilogue */
-#epilogue > img{ left:3.5%; top:15%; }
-#epilogue .epilogueBox{ left:3.5%; top:24%; width:93%; height:60%; background-color:#dedede; overflow:hidden; }
-#epilogue .epilogueBox .epilogueText01{ position:absolute; left:3%; top:5%; width:30%; height:90%; }
-#epilogue .epilogueBox .epilogueText01 > span{ margin-top:20px; font-size:1.6em; text-align:justify; display:block; font-weight:bold; color:#666666; line-height:1.3; }
-#epilogue .epilogueBox .epilogueText01 p{ margin-top:30px; font-size:1.2em; text-align:justify; color:#555555; line-height:1.3; }
-#epilogue .epilogueBox .epilogueText02{ position:absolute; left:36%; top:5%; width:30%; height:90%; }
-#epilogue .epilogueBox .epilogueText02 > span{ margin-top:20px; font-size:1.6em; text-align:justify; display:block; font-weight:bold; color:#666666; line-height:1.3; }
-#epilogue .epilogueBox .epilogueText02 p{ margin-top:30px; font-size:1.2em; text-align:justify; color:#555555; line-height:1.3; }
-#epilogue .epilogueBox .epilogueImg01{ position:absolute; left:72%; top:-7%; }
-#epilogue .epilogueBox .epilogueText02 p span{ font-weight:bold; text-decoration:underline; }
-#epilogue .epilogueBox .epilogueImg01 img { 
-	-o-transform: rotate(10deg); 
-	-ms-transform: rotate(10deg); 
-	-moz-transform: rotate(10deg);
-	-webkit-transform: rotate(10deg);
-	transform: rotate(10deg); 
-}
-#epilogue .epilogueBox .epilogueImg02{ position:absolute; left:70%; top:35%; }
-#epilogue .epilogueBox .epilogueImg02 img{
-	-o-transform: rotate(353deg); 
-	-ms-transform: rotate(353deg); 
-	-moz-transform: rotate(353deg);
-	-webkit-transform: rotate(353deg);
-	transform: rotate(353deg); 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
