@@ -34,14 +34,14 @@ p::selection{ background-color:#dddddd; color:#ff0000; }
 
 #main{ width:1400px; height:950px; position:relative; background:#f7fcff; }
 #profile{ width:1400px; height:1000px; position:relative; background:#f7fcff; }
-#mobile{ width:1400px; height:1000px; position:relative; background:#f7fcff; }
+#branding01{ width:1400px; height:1000px; position:relative; background:#f7fcff; }
 #adaptive01{ width:1400px; height:1000px; position:relative; background:#f7fcff; }
 #jQuery{ width:1400px; height:1000px; position:relative; background:#f7fcff; }
 #css{ width:1400px; height:1000px; position:relative; background:#f7fcff; }
-#main>*, #profile>*, #mobile>*, #adaptive01>*, #jQuery>*, #css>*{ position:absolute; }
+#main>*, #profile>*, #branding01>*, #adaptive01>*, #jQuery>*, #css>*{ position:absolute; }
 
 /* 퀵메뉴 스타일 정의 */
-#floatdiv{ position:absolute; left:0; top:250px; margin-left:10px; }
+#floatdiv{ position:absolute; left:1800px !important; top:250px; margin-left:10px; }
 #floatdiv ul{ border:0; margin:0; padding:0; }
 #floatdiv ul li{ border:0; margin:0; padding:0; }
 #floatdiv ul li span{ margin:0 0 5px 0; cursor:pointer; }
@@ -91,30 +91,31 @@ p::selection{ background-color:#dddddd; color:#ff0000; }
 
 /* profile */
 #profile>img{ left:3.5%; top:15%; }
-#profile .profile01{ left:6%; top:38%; width:210px; }
-#profile .profile02{ left:28%; top:38%; width:290px; }
-#profile .profile03{ left:58%; top:38%; width:130px; }
-#profile .profile04{ left:77%; top:38%; width:210px; }
-#profile strong{ display:block; margin-top:20px; text-align:center; font-size:2.8em; color:#26376f; }
-#profile ul{ margin:20px 0 0 20px; }
-#profile ul li{ list-style:square; font-size:1.3em; line-height:170%; color:#222222; }
+#profile .profile01{ left:6%; top:38%; width:230px; }
+#profile .profile02{ left:28%; top:38%; width:230px; }
+#profile .profile03{ left:55%; top:38%; width:190px; }
+#profile .profile04{ left:77%; top:38%; width:250px; }
+#profile strong{ display:block; margin-top:20px; text-align:center; font-size:2.8em; color:#26376f; font-family:'Maven Pro',sans-serif; font-weight:900; }
+#profile ul{ margin:20px 0 0 45px; }
+#profile ul li:before{ content: '#'; clear:both; font-weight:bold; margin-right:5px; }
+#profile ul li{ list-style:none; font-size:1.3em; line-height:170%; color:#222222; }
 #profile .profile01 img{ display:block; margin:0 auto; }
 #profile .profile02 img{ display:block; margin:0 auto; }
 #profile .profile03 img{ display:block; margin:0 auto; }
 #profile .profile04 img{ display:block; margin:0 auto; }
 /* mobile */
-#mobile > img{ left:3.5%; top:15%; }
-#mobile .mobile01{ left:4%; top:23%; }
-#mobile .mobile02{ left:4%; top:36%; }
-#mobile .mobile03{ left:4%; top:49%; }
-#mobile .mobile04{ left:4%; top:62%; }
-#mobile .mobileMainImg{ lefT:47.5%; top:24%; }
-#mobile .mobileSubImg{ left:4.2%; top:76%; }
-#mobile .mobileSubImg img{ margin-right:20px; }
-#mobile span{ font-size:2em; color:#0036d9; font-family:'Nanum Pen Script', Cursive; }
-#mobile strong{ font-size:2em; color:#26376f; padding:0 10px 0 0; }
-#mobile p{ width:500px; margin-top:5px; color:#222222; line-height:1.5em; text-align:justify; }
-#mobile p .point{ color:#1184e8; font-weight:bold; font-size:1em; font-family:'맑은 고딕', sans-serif; }
+#branding01 > img{ left:2.5%; top:15%; }
+#branding01 .branding01_1{ left:4%; top:23%; }
+#branding01 .branding02{ left:4%; top:36%; }
+#branding01 .branding03{ left:4%; top:49%; }
+#branding01 .branding04{ left:4%; top:62%; }
+#branding01 .mobileMainImg{ lefT:47.5%; top:24%; }
+#branding01 .mobileSubImg{ left:4.2%; top:76%; }
+#branding01 .mobileSubImg img{ margin-right:20px; }
+#branding01 span{ font-size:1.5em; color:#0036d9; font-family:'나눔 고딕', sans-serif; }
+#branding01 strong{ font-size:2em; color:#26376f; padding:0 10px 0 0; font-family:'Maven Pro', sans-serif; font-weight:500; }
+#branding01 p{ width:500px; margin-top:5px; color:#222222; line-height:1.5em; text-align:justify; }
+#branding01 p .point{ color:#1184e8; font-weight:bold; font-size:1em; font-family:'맑은 고딕', sans-serif; }
 /* adaptive01 */
 #adaptive01 > img{ left:3.5%; top:15%; }
 #adaptive01 .adaptive01{ left:4%; top:23%; }
