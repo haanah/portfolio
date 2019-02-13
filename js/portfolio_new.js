@@ -60,6 +60,11 @@ $(function () {
 			'left': '0'
 		}, 300);
 	});
+	/*$('.text2 ul').hover(function(){
+		$(this).css('height':'200px');
+		console.log(this);
+	});*/
+	
 
 });
 

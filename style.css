@@ -154,7 +154,7 @@ body {
 }
 
 #menu li a:hover {
-	color: #fff;
+	color: #76d016;
 	transition: all .7s;
 }
 
@@ -175,13 +175,13 @@ body {
 }
 #main .pLogo{ 
 	float:left;
-	margin:50px 0 0 260px;
-	width:723px; height:850px; background:url(image/profile1249.png) no-repeat; }
+	margin:88px 0 0 260px;
+	width:723px; height:850px; background:url(images/profile1249.png) no-repeat; }
 #main .me{
 	float:right;
 	margin:150px 300px 0 0;
 	width:500px; height:300px;
-	background:url(image/mainText.png) no-repeat;
+	background:url(images/mainText.png) no-repeat;
 }
 #fullpage .icon4_s0 {
 	position: absolute;
@@ -228,89 +228,32 @@ body {
 }
 
 #fullpage #section1 .p1_s1 {
+	display:block;
+	float:left;
 	text-indent: -9999px;
-	width: 100%;
-	height: 6px;
-	background-color: #eee;
+	width:400px; height:369px;
+	margin: 100px 0 0 300px;
+	background: url(images/section1Me.png) no-repeat;
+	-webkit-animation: slide 3s linear infinite alternate;
 }
-
-#fullpage #section1 div {
-	padding-left: 318px;
-	padding-top: 85px;
-	float: left;
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: 35px 0; }
 }
-
-#fullpage #section1 div img {
-	box-shadow: -18px 18px 0 #f6a313;
-}
-
-#fullpage #section1 div img:nth-of-type(2) {
-	display: none;
-}
-
+#section1>div{ margin-top:100px; }
+#section1>div>p{ font-size:14px; font-family:'Maven Pro',sans-serif; font-weight:600; }
 #fullpage #section1 .text2 {
-	width: 533px;
-	height: 342px;
+	width: 210px;
+	height: 550px;
 	float: left;
-	padding-left: 330px;
-	padding-top: 85px;
-	padding-bottom: 210px;
 }
-
-#fullpage #section1 .text2 span {
-	font-size: 31px;
-	font-family: 'BM JUA';
-	width: 100%;
-	display: inline-block;
-	line-height: 2;
-	text-align: left;
-	margin-top: 20px;
+.text2 ul{ height:130px; }
+#fullpage #section1 .text2-1{ width:220px; height:550px;
+float: left; }
+#fullpage #section1 .text2-2{
+	width:230px; height:550px; float:left;
 }
-
-#fullpage #section1 .text2 span:nth-of-type(2) {
-	font-size: 39px;
-}
-
-#fullpage #section1 .text2 span:nth-of-type(3) {
-	font-size: 39px;
-	margin-top: 0;
-	line-height: 2;
-}
-
-#fullpage #section1 .text2 span:nth-of-type(4) {
-	font-size: 39px;
-	margin-top: 0;
-	line-height: 1;
-}
-
-
-#fullpage #section1 .text2 span:nth-of-type(2) em {
-	font-family: 'Agency FB';
-	font-style: normal;
-}
-
-#fullpage #section1 .p3_s1 {
-	font-family: 'BM JUA';
-	font-size: 38px;
-	text-align: center;
-	padding-top: 0px;
-}
-
-#fullpage #section1 .p4_s1 {
-	font-family: "Agency FB";
-	font-size: 31px;
-	text-align: center;
-	padding-bottom: 10px;
-}
-
-#fullpage #section1 .p5_s1 {
-	text-indent: -9999px;
-	clear: both;
-	width: 7%;
-	height: 17px;
-	background-color: #eee;
-	margin-left: 46.4%;
-}
+#fullpage #section1 .text2-3{ width:240px; height:550px; float:left; }
 
 /* section1 end */
 
