@@ -71,7 +71,7 @@ fieldset,
 img {
 	border: 0 none
 }
-
+img{ display:block; }
 dl,
 ul,
 ol,
@@ -269,8 +269,8 @@ body {
 
 #fullpage #section2 {
 	width: 100%;
-	height: 1080px;
-	background: url(images/bgsection2.png) no-repeat center center;
+	height: 100vh;
+	background: url(images/section2bg.png) no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -279,32 +279,28 @@ body {
 	font-family: 'BM JUA';
 	font-size: 31px;
 	font-weight: normal;
-	margin-top: 15px;
-	margin-bottom: 10px;
-	margin-left: 300px;
+	padding-top: 5rem;
+	margin: 0 0 10px 300px;
 }
 
-#fullpage #section2 .text2 {
+#fullpage #section2 .text_s2 {
 	width: 90%;
 	font-size: 28px;
 	display: inline-block;
 	text-align: right;
+	background: rgba(255,255,255,0.5);
 }
-
-#fullpage #section2 .p2_s2 {
-	text-indent: -9999px;
-	width: 100%;
-	height: 6px;
-	background-color: #eee;
-}
-
-#fullpage #section2 .imgs div p {
-	display: inline-block;
-	width: 220px;
+.p2_s2{ 
+	font-family: 'Nanum Gothic', sans-serif;
+	color: #ecdc73;
+	font-size: 180px;
 	text-align: center;
-	font-size: 40px;
-	padding-top: 40px;
-}
+	-webkit-text-stroke: 2px #f95420; }
+.imgsection2{ 
+	width:567px; height:449px; margin-left:250px; position:absolute; }
+.wrapsection2{width: 553px; height: 450px; position: relative; top: 247px; left:7%; float: left;}
+.imgInnersection2{  position:absolute; overflow: hidden; top:28px; left:25px;}
+.textsection2{}
 
 /* section2 end */
 
