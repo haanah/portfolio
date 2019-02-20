@@ -198,11 +198,12 @@ body {
 	height: 100vh;
 	box-sizing: border-box;
 	background: #f9fdba;
+	overflow: hidden;
 }
 
 #fullpage #section1 .h2_s1 {
 	font-family: 'BM JUA';
-	font-size: 31px;
+	font-size: 42px;
 	font-weight: normal;
 	padding-top: 5rem;
 	margin: 0 0 10px 300px;	
@@ -212,9 +213,11 @@ body {
 	width: 90%;
 	font-size: 28px;
 	display: inline-block;
-	text-align: right;
+	text-align: left;
 	font-family: 'Agency FB', sans-serif;
 	font-weight: normal;
+	padding: 10px 0 10px 10px;
+	margin-left: 290px;
 	background: rgba(255,255,255,0.5);
 }
 
@@ -273,11 +276,12 @@ body {
 	background: url(images/section2bg.png) no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
+	overflow: hidden;
 }
 
 #section2 .h2_s2 {
 	font-family: 'BM JUA';
-	font-size: 31px;
+	font-size: 42px;
 	font-weight: normal;
 	padding-top: 5rem;
 	margin: 0 0 10px 300px;
@@ -287,21 +291,26 @@ body {
 	width: 90%;
 	font-size: 28px;
 	display: inline-block;
-	text-align: right;
+	text-align: left;
+	margin-left: 290px;
+	padding: 10px 0 10px 10px;
 	background: rgba(255,255,255,0.5);
 }
-.p2_s2{ 
-	font-family: 'Nanum Gothic', sans-serif;
-	color: #ecdc73;
-	font-size: 180px;
-	text-align: center;
-	-webkit-text-stroke: 2px #f95420; }
 .imgsection2{ 
-	width:567px; height:449px; margin-left:250px; position:absolute; }
-.wrapsection2{width: 553px; height: 450px; position: relative; top: 247px; left:7%; float: left;}
-.imgInnersection2{  position:absolute; overflow: hidden; top:28px; left:25px;}
-.textsection2{}
-
+	width:570px; height:449px; margin-left:235px; position:relative; left:70px; top:-100px; float:left; }
+.wrapsection2{ width: 525px; height: 450px; position: relative; top: 230px; left:0; }
+.imgInnersection2{ width:473px; height:280px; position:absolute; overflow: hidden; top:255px; left:25px;}
+.imgWrapsection2>img{ display:block; position:absolute; top:-1px; }
+.textsection2{float:right; width:600px; padding:100px 200px 10px 0; }
+.concept-section2>h3{font-size:25px; color:#963736; font-family:'Maven Pro', sans-serif; }
+.uiux-section2>h3{font-size:25px; color:#963736; font-family:'Maven Pro', sans-serif; }
+.epilogue-section2>h3{font-size:25px; color:#963736; font-family:'Maven Pro', sans-serif;}
+.concept-section2>ul{padding: 20px;}
+.concept-section2>ul>li{ font-size:16px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; }
+.uiux-section2>ul{padding: 20px;}
+.uiux-section2>ul>li{ font-size:16px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; }
+.epilogue-section2>ul{padding: 20px;}
+.epilogue-section2>ul>li{ font-size:16px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; }
 /* section2 end */
 
 #fullpage #section3 {

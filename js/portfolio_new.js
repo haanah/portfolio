@@ -6,15 +6,15 @@ $(function () {
 			scrollTop: $(this.hash).offset().top
 		}, 500);
 	});
-	$('#toggle').on('click', function(event){
+	$('#toggle').on('click', function (event) {
 		event.preventDefault();
-		if($('#menu').attr('class') == 'show'){
+		if ($('#menu').attr('class') == 'show') {
 			$('#menu').removeClass('show');
-		}else{
+		} else {
 			$('#menu').addClass('show');
 		};
 	});
-	$('#menu').on('click',function(event){
+	$('#menu').on('click', function (event) {
 		event.preventDefault();
 		$('#menu').removeClass('show');
 	});
@@ -60,13 +60,15 @@ $(function () {
 			'left': '0'
 		}, 300);
 	});
-	/*$('.text2 ul').hover(function(){
-		$(this).css('height':'200px');
-		console.log(this);
-	});*/
-	
+	$('.imgInnersection2').hover(function () {
+		$('.imgInnersection2 img').stop().animate({
+			'margin-top': '-300px'
+		}, 2000);
+	}, function () {
+		$('.imgInnersection2 img').stop().animate({
+			'margin-top': '0'
+		}, 300);
+	});
 
 });
 
-
-/* ul을 이동시키려면 position:absolute 해줘야 함 */

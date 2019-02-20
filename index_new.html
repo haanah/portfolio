@@ -23,7 +23,7 @@
 		<ul id="menu">
 			<li class="mLogo"><a href="#section0" class="top"><img src="images/logo_01.png" alt="logo"></a></li>
 			<li><a href="#section1" class="top">PROFILE</a></li>
-			<li><a href="#section3" class="top">BRANDING 1</a></li>
+			<li><a href="#section2" class="top">BRANDING 1</a></li>
 			<li><a href="#section4" class="top">ADAPTIVE 1</a></li>
 			<li><a href="#" class="top">JQUERY</a></li>
 		</ul>
@@ -33,7 +33,6 @@
 			<div id="main">
 				<div class="pLogo"></div>
 				<div class="me"></div>
-				<!--</div>-->
 			</div>
 			<div class="scroll"></div>
 		</div><!-- section0 end -->
@@ -100,26 +99,39 @@
 		<div id="section2">
 			<h2 class="h2_s2">BRANDING 1</h2>
 			<p class="text_s2"># L A O N</p>
-			<p class="p2_s2">LAON</p>
-			<div class="imgsection2"><p class="wrapsection2"><a href="laonla.html"><img src="images/computer.png" alt="computer" width="567" margin-top="0"></a></p>
-				<div class="imgInnersection2"><a href=""><img src="images/laoncapture.png" alt="laon" width="515" style="margin-top:0px;"></a></div>			
+			<div class="imgsection2">
+				<p class="wrapsection2"><a href="#"><img src="images/computer.png" alt="computer" width="524"></a></p>
+				<div class="imgInnersection2">
+					<a href="laonla.html" class="imgWrapsection2">
+						<img src="images/laoncapture.png" alt="laon" width="487">
+					</a>
+				</div>
+				<!--class="imgInnersection2"-->
 			</div>
-			
-			<script>
-				$(function() {
-					$('.imgsection2').hover(function() {
-						$('.imgInnersection2 img').stop().animate({
-							'margin-top': '-4476px'
-						}, 3000);
-					}, function() {
-						$('.imgInnersection2 img').stop().animate({
-							'margin-top': '0'
-						}, 300);
-					});
-				});
-
-			</script>
-			<div class="textsection2"></div>
+			<!--class="imgsection2"-->
+			<div class="textsection2">
+				<div class="concept-section2">
+					<h3>CONCEPT</h3>
+					<ul>
+						<li>음향기기 브랜딩 웹사이트</li>
+						<li>활동적이고 세련된, 모던함을 가진 <br/> 헤드폰 브랜드 소개 사이트</li>
+					</ul>
+				</div>
+				<div class="uiux-section2">
+					<h3>UI &amp; UX</h3>
+					<ul>
+						<li>깔끔한 배치, 제품은 눈에 띄게.</li>
+						<li>우측 상단에 검색 버튼을 만들었고 <br/> 메인과 서브페이지에 슬라이드와 탭 형식을 <br/> 이용하여 제품에 더 쉽게 접근하도록 구성하였다.</li>
+					</ul>
+				</div>
+				<div class="epilogue-section2">
+					<h3>EPILOGUE</h3>
+					<ul>
+						<li>제일 처음 만들어 본 웹사이트로, <br/> 알고 있는 것들을 총 동원해서 작업하였다.</li>
+						<li>해보고 싶었던 슬라이드와 탭 형식을 구현해볼 수 있어서 <br/> 신기했다. 컨셉에 맞게 여러 페이지를 작업하다 보니까 <br/> 이후 만들어 볼 페이지에 대해 부담을 덜 수 있었다.</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<!-- section2 end -->
 		<div id="section3">
@@ -170,7 +182,8 @@
 		</div>
 	</div>
 	<!-- fullpage end -->
-	<script src=js/jquery-1.12.4.min.js> </script> <script src="js/portfolio_new.js"></script>
+	<script src=js/jquery-1.12.4.min.js></script>
+	<script src="js/portfolio_new.js"></script>
 </body>
 
 </html>
