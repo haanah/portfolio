@@ -18,48 +18,7 @@ $(function () {
 		event.preventDefault();
 		$('#menu').removeClass('show');
 	});
-	$('.icon .tel').on('mouseenter', function () {
-		$('.phone').css("display", "block");
-	});
 
-	$('.icon .tel').on('mouseleave', function () {
-		$('.phone').css("display", "none");
-	});
-	$('.icon .mail').on('mouseenter', function () {
-		$('.email').css("display", "block");
-	});
-	$('.icon .mail').on('mouseleave', function () {
-		$('.email').css("display", "none");
-	});
-	$('.icon .sns').on('mouseenter', function () {
-		$('.insta').css("display", "block");
-	});
-	$('.icon .sns').on('mouseleave', function () {
-		$('.insta').css("display", "none");
-	});
-
-	var Num = $('.wrap').find('.wrap>div').length; /* li 갯수 구하기 */
-	var imgW = $('.wrap').find('.wrap>div').width(); /* li 넓이 구하기 */
-	$('.wrap').width(Num * imgW);
-	/* li 부모요소인 ul 넓이 구하기 */
-	$('.next').on('click', function (event) {
-		event.preventDefault();
-		$('.wrap').animate({
-			left: -imgW
-		}, 0, function () {
-			$('.wrap').children().eq(0).appendTo($('.wrap'));
-			$('.wrap').css('left', 0);
-		});
-	});
-
-	$('.prev').on('click', function (event) {
-		event.preventDefault();
-		$('.wrap').children().eq(Num - 1).prependTo($('.wrap'));
-		$('.wrap').css('left', -imgW);
-		$('.wrap').animate({
-			'left': '0'
-		}, 300);
-	});
 	$('.imgInnersection2').hover(function () {
 		$('.imgInnersection2 img').stop().animate({
 			'margin-top': '-300px'
@@ -69,6 +28,39 @@ $(function () {
 			'margin-top': '0'
 		}, 300);
 	});
+	
+	/* TOOLTIP start */
+	var balloon = $('<div class="balloon"></div>').
+		appendTo('body');
+		function updateBalloonPosition(x,y){
+			balloon.css({left: x+15, top: y});  // 마우스겹쳐짐 보완 x+15
+		}
+		function showBalloon(){
+			balloon.stop().css('opacity',0).show().animate({opacity:1},1500);
+			// opacity 0으로 안보이게 했다가 보여짐
+		}
+		function hideBalloon(){
+			balloon.stop().animate({opacity:0},2000,function(){balloon.hide();});
+			// animate 속성값 3가지를 넣음
+		}
+		$('.showBalloon').each(function(){
+			var element = $(this);
+			var text = element.attr('title');
+			element.attr('title','');
+			element.hover(
+				function(event){
+					balloon.text(text);
+					updateBalloonPosition(event.pageX, event.pageY);
+					showBalloon();     // event를 넣고 매개변수값 받음 
+				},
+				function(){
+					hideBalloon();
+				}
+			);
+			element.mousemove(function(event){
+				updateBalloonPosition(event.pageX, event.pageY);
+			});
+		});
 
 });
 
