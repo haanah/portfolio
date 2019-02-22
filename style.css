@@ -256,17 +256,35 @@ body {
 .text2-1 ul>li{ height:46px; font-family:'Malgun Gothic', sans-serif; font-size:14px; }
 .text2-1 ul>li:before{ content:'# '; clear:both; }
 .text2-2{
-	width:180px; height:550px; float:left; margin-left:20px;
+	width:210px; height:550px; float:left; margin-left:20px;
 }
-.text2-2>div{ width:180px; height:300px; background:rgba(17,17,17,0.7); border-radius:20px; }
+.text2-2>div{ width:210px; height:300px; background:rgba(17,17,17,0.7); border-radius:20px; }
 .text2-2 ul{ margin-top:15px; padding:10px; }
 .text2-2 ul>li{ height:33px; font-family:'Malgun Gothic', sans-serif; font-size:14px; }
 .text2-2 ul>li:before{ content:'# '; clear:both; }
-.text2-3{ width:210px; height:550px; float:left; margin-left:20px; }
+.text2-3{ width:350px; height:550px; float:left; margin-left:20px; }
+.text2-3>div{ width:350px; height:300px; background:rgba(17,17,17,0.7); border-radius:20px; margin-top: 15px; }
+.skill{height:25px; margin:25px 0;}
+.skill_n{ display:block; color:#ffffff; font-size:14px; float:left; width:100px; }
+.skillBg{ width:250px; height:14px; margin:5px 0; background:url(images/skillBg.png); float: left; border:1px solid #444444; position:relative; }
+.skill_p{ float:left; font-size:14px; padding-left:10px; color:#ffffff; }
+.g1{ display:block; background-color: #ecdc73; height:12px; border:1px solid #ffffff; position:absolute;
+}
+.g2{ display:block; background-color: #ecdc73; height:12px; border:1px solid #ffffff; position:absolute;
+}
+.g3{ display:block; background-color: #ecdc73; height:12px; border:1px solid #ffffff; position:absolute;
+}
+.g4{ display:block; background-color: #ecdc73; height:12px; border:1px solid #ffffff; position:absolute;
+}
+.g5{ display:block; background-color: #ecdc73; height:12px; border:1px solid #ffffff; position:absolute;
+}
+.g6{ display:block; background-color: #ecdc73; height:12px; border:1px solid #ffffff; position:absolute;
+}
+/*
 .text2-3>div{ width:210px; height:300px; background:rgba(17,17,17,0.7); border-radius:20px; }
 .text2-3 ul{ margin-top:15px; padding:10px; }
 .text2-3 ul>li{ height:33px; font-family:'Malgun Gothic', sans-serif; font-size:14px; }
-.text2-3 ul>li:before{ content:'# '; clear:both; }
+.text2-3 ul>li:before{ content:'# '; clear:both; }*/
 
 /* section1 end */
 
