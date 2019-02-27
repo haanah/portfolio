@@ -29,6 +29,15 @@ $(function () {
 			'margin-top': '0'
 		}, 300);
 	});
+	$('.imgInnersection3').hover(function () {
+		$('.imgInnersection3 img').stop().animate({
+			'margin-top': '-975px'
+		}, 3500);
+	}, function () {
+		$('.imgInnersection3 img').stop().animate({
+			'margin-top': '0'
+		}, 300);
+	});
 	
 	/* TOOLTIP start */
 	var balloon = $('<div class="balloon"></div>').
@@ -118,5 +127,6 @@ $(function () {
 		};
 	})); 
 	/* SKILL PERCENT end */
+	
 });
 

@@ -34,6 +34,11 @@
 	src: url(fonts/agency-fb.eot);
 	src: local(※), url(fonts/agency-fb.woff)format('woff');
 }
+@font-face {
+	font-family: 'Bree Serif';
+	src: url(fonts/BreeSerif-Regular.eot);
+	src: local(※), url(fonts/BreeSerif-Regular.woff)format('woff');
+}
 
 body,
 div,
@@ -316,7 +321,7 @@ body {
 .imgsection2{ 
 	width:815px; height:449px; margin-left:235px; position:relative; left:70px; top:-100px; float:left; }
 .wrapsection2{ width: 525px; height: 450px; position: relative; top: 230px; left:0; float: left; }
-.imgInnersection2{ width:473px; height:280px; position:absolute; overflow: hidden; top:255px; left:25px;}
+.imgInnersection2{ width:426px; height:240px; position:absolute; overflow: hidden; top:255px; left:24px;}
 .imgWrapsection2>img{ display:block; position:absolute; top:-1px; }
 .mobileSection2{ float: left; margin-top: 220px; }
 .mobileSection2 > a{
@@ -329,15 +334,15 @@ body {
 }
 .balloon{ background:#963736; color:#ffffff; padding:10px; position:absolute; display:none; font-size:17px; font-family:'Malgun Gothic', sans-serif; border-radius:30px; }
 .textsection2{float:right; width:600px; padding:100px 200px 10px 0; }
-.concept-section2>h3{font-size:25px; color:#963736; font-family:'Maven Pro', sans-serif; }
-.uiux-section2>h3{font-size:25px; color:#963736; font-family:'Maven Pro', sans-serif; }
-.epilogue-section2>h3{font-size:25px; color:#963736; font-family:'Maven Pro', sans-serif;}
+.concept-section2>h3{font-size:25px; color:#963736; font-family: 'Bree Serif', serif; font-style: italic; }
+.uiux-section2>h3{font-size:25px; color:#963736; font-family: 'Bree Serif', serif; font-style: italic; }
+.epilogue-section2>h3{font-size:25px; color:#963736; font-family: 'Bree Serif', serif; font-style: italic; }
 .concept-section2>ul{padding: 20px;}
-.concept-section2>ul>li{ font-size:16px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; }
+.concept-section2>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; }
 .uiux-section2>ul{padding: 20px;}
-.uiux-section2>ul>li{ font-size:16px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; }
+.uiux-section2>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; }
 .epilogue-section2>ul{padding: 20px;}
-.epilogue-section2>ul>li{ font-size:16px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; }
+.epilogue-section2>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; }
 /* section2 end */
 
 #fullpage #section3 {
@@ -395,6 +400,18 @@ body {
 	from{ top:0px; }
 	to{ top:-70px; }
 }
+.textsection3{float: right; width: 500px; padding: 70px 150px 10px 0;}
+.concept-section3>h3{color:#f3bb14; font-size:25px; font-family: 'Bree Serif', serif; font-style: italic;}
+.uiux-section3>h3{color:#f3bb14; font-size:25px; font-family: 'Bree Serif', serif; font-style: italic;}
+.epilogue-section3>h3{color:#f3bb14; font-size:25px; font-family: 'Bree Serif', serif; font-style: italic;}
+.concept-section3>ul{
+	padding:20px;
+}
+.uiux-section3>ul{ padding: 20px;}
+.epilogue-section3>ul{ padding: 20px;}
+.concept-section3>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #ffffff; }
+.uiux-section3>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #ffffff; }
+.epilogue-section3>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #ffffff; }
 /* section3 end */
 
 #fullpage #section4 {
@@ -402,47 +419,46 @@ body {
 	height: 100vh;
 	position: relative;
 	top: 0;
+	overflow: hidden;
+	background: url(images/section4bg_gradation.PNG) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 #fullpage #section4 .p1_s4 {
-	width: 35%;
-	margin: 0 auto;
-	font-size: 24px;
+	width: 90%;
+	font-size: 28px;
+	display: inline-block;
+	text-align: left;
+	padding: 10px 0 10px 10px;
+	margin-left: 290px;
+	background: rgba(255,255,255,0.6);
+	color: #007445;
+}
+#fullpage #section4 .h2_s4 {
+	text-align: left;
+	font-weight: normal;
 	font-family: 'BM JUA';
-	padding-top: 8rem;
-	text-align: center;
-	padding-bottom: 120px;
-	line-height: 2;
+	font-size: 42px; margin: 0 0 10px 300px;
+	padding-top: 5rem; color: #007445;
+}
+#section4 > h4{ margin-left:300px; color: #444444; font-size:14px; font-family:'Malgun Gothic', sans-serif; }
+.white{ display:block; position:absolute; margin-left: 200px; margin-top: 300px; -webkit-animation: white 2s linear infinite alternate;}
+@-webkit-keyframes white{
+	from{ top:0px; }
+	to{ top:20px; }
+}
+.green{ display: block; position: absolute; margin-left: 550px; margin-top: 250px; -webkit-animation: green 2s linear infinite alternate; }
+@-webkit-keyframes green{
+	from{ top: 0px; }
+	to{ top: 20px; }
+}
+.black{ display: block; position: absolute; margin-top: 400px; margin-left: 400px; -webkit-animation: black 2s linear infinite alternate; }
+@-webkit-keyframes black{
+	from{top:0px;}
+	to{top:20px;}
 }
 
-#fullpage #section4 .p2_s4 {
-	width: 174px;
-	height: 6px;
-	text-indent: -9999px;
-	background: #000;
-	margin: 0 auto;
-}
-
-#fullpage #section4 .bgcolor {
-	width: 100%;
-	height: 500px;
-	background: #dbd5cd;
-	position: absolute;
-	bottom: 0;
-	z-index: -10;
-}
-
-#fullpage #section4 .p3_s4 {
-	text-align: center;
-	font-size: 90px;
-	padding-top: 20px;
-}
-
-#fullpage #section4 .p4_s4 {
-	text-align: center;
-	font-size: 80px;
-	padding-top: 40px;
-}
 /* web end */
 
 @media all and (max-width:1024px) {
