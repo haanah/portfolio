@@ -458,6 +458,11 @@ body {
 	from{top:0px;}
 	to{top:20px;}
 }
+.imgsection4{ 
+	width:880px; height:449px; margin-left:235px; position:relative; left:70px; top:-100px; float:left; }
+.wrapsection4{ width: 474px; height: 450px; position: relative; top: 230px; left:-13px; float: left; }
+.imgInnersection4{ width:501px; height:251px; position:absolute; overflow: hidden; top:243px; left:4px; border: 5px solid #222222;}
+.imgWrapsection4>img{ display:block; position:absolute; top:-1px; }
 
 /* web end */
 

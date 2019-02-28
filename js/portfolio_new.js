@@ -38,6 +38,15 @@ $(function () {
 			'margin-top': '0'
 		}, 300);
 	});
+	$('.imgInnersection4').hover(function () {
+		$('.imgInnersection4 img').stop().animate({
+			'margin-left': '-1000px'
+		}, 4000);
+	}, function () {
+		$('.imgInnersection4 img').stop().animate({
+			'margin-left': '0'
+		}, 300);
+	});
 	
 	/* TOOLTIP start */
 	var balloon = $('<div class="balloon"></div>').
@@ -127,6 +136,48 @@ $(function () {
 		};
 	})); 
 	/* SKILL PERCENT end */
+	
+	/* scroll slideDown start */
+	$(window).scroll(function(){
+		var sct=$(window).scrollTop();
+		var hello=$('#section1').offset();
+		
+		if(sct>hello.top-200){
+			$('.text1').slideDown(1000);
+		}else{
+			$('.text1').slideUp(1000);
+		}
+	});
+	$(window).scroll(function(){
+		var sct=$(window).scrollTop();
+		var hello=$('#section2').offset();
+		
+		if(sct>hello.top-200){
+			$('.text_s2').slideDown(1000);
+		}else{
+			$('.text_s2').slideUp(1000);
+		}
+	});
+	$(window).scroll(function(){
+		var sct=$(window).scrollTop();
+		var hello=$('#section3').offset();
+		
+		if(sct>hello.top-200){
+			$('.text3').slideDown(1000);
+		}else{
+			$('.text3').slideUp(1000);
+		}
+	});
+	$(window).scroll(function(){
+		var sct=$(window).scrollTop();
+		var hello=$('#section4').offset();
+		
+		if(sct>hello.top-200){
+			$('.p1_s4').slideDown(1000);
+		}else{
+			$('.p1_s4').slideUp(1000);
+		}
+	});
 	
 });
 
