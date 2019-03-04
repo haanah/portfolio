@@ -179,5 +179,16 @@ $(function () {
 		}
 	});
 	
+	/* DT,DD EVENT START */
+	$('dt').on('click',function(){
+
+		if($(this).next().css('display')=='none'){
+			$('dd').slideUp(350);
+			$(this).next().slideDown(350);
+		}else{
+			$(this).next().slideUp(350);
+		}
+		});
+
 });
 
