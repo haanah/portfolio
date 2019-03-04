@@ -420,7 +420,7 @@ body {
 	position: relative;
 	top: 0;
 	overflow: hidden;
-	background: url(images/section4bg_gradation.PNG) no-repeat center center;
+	background: url(images/section4bgwhite.PNG) no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -443,28 +443,30 @@ body {
 	padding-top: 5rem; color: #007445;
 }
 #section4 > h4{ margin-left:300px; color: #444444; font-size:14px; font-family:'Malgun Gothic', sans-serif; }
-.white{ display:block; position:absolute; margin-left: 200px; margin-top: 300px; -webkit-animation: white 2s linear infinite alternate;}
-@-webkit-keyframes white{
-	from{ top:0px; }
-	to{ top:20px; }
-}
-.green{ display: block; position: absolute; margin-left: 550px; margin-top: 250px; -webkit-animation: green 2s linear infinite alternate; }
-@-webkit-keyframes green{
-	from{ top: 0px; }
-	to{ top: 20px; }
-}
-.black{ display: block; position: absolute; margin-top: 400px; margin-left: 400px; -webkit-animation: black 2s linear infinite alternate; }
-@-webkit-keyframes black{
-	from{top:0px;}
-	to{top:20px;}
-}
 .imgsection4{ 
-	width:880px; height:449px; margin-left:235px; position:relative; left:70px; top:-100px; float:left; }
+	width:680px; height:449px; margin-left:235px; position:relative; left:70px; top:-100px; float:left; }
 .wrapsection4{ width: 474px; height: 450px; position: relative; top: 230px; left:-13px; float: left; }
 .imgInnersection4{ width:501px; height:251px; position:absolute; overflow: hidden; top:243px; left:4px; border: 5px solid #222222;}
 .imgWrapsection4>img{ display:block; position:absolute; top:-1px; }
-.imgSubsection4{ width: 300px; height: 400px; float: left; position: relative; left: 550px; }
-.imgSubsection4 dl{ width: 300px; }
-.imgSubsection4 dt{ background: #222; color:#fff; padding: 2px 4px; cursor: pointer;}
-.imgSubsection4 dd{ padding: 4px 6px; margin: -4px 0 4px; display: none; }
+.imgSubsection4{ width: 300px; height: 400px; float: left; position: relative; left: 1200px; top: 100px;
+-webkit-animation: IMGS 2s linear infinite alternate; }
+@-webkit-keyframes IMGS{
+	from{ left: 1200px; }
+	to{ left: 1220px; }
+}
+.imgSubsection4 dl{ width: 300px; float: left; }
+.imgSubsection4 dt{ background: #ffffff; color:#007445; padding: 3px 10px; cursor: pointer; font-size: 1.2rem; }
+.imgSubsection4 dd{ padding: 4px 10px; margin: -4px 0 0px; display: none; }
+.textsection4{float: left; width: 500px; padding-top: 70px;}
+.concept-section4>h3{color:#007445; font-size:25px; font-family: 'Bree Serif', serif; font-style: italic;}
+.uiux-section4>h3{color:#007445; font-size:25px; font-family: 'Bree Serif', serif; font-style: italic;}
+.epilogue-section4>h3{color:#007445; font-size:25px; font-family: 'Bree Serif', serif; font-style: italic;}
+.concept-section4>ul{
+	padding:20px;
+}
+.uiux-section4>ul{ padding: 20px;}
+.epilogue-section4>ul{ padding: 20px;}
+.concept-section4>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #000000; }
+.uiux-section4>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #000000; }
+.epilogue-section4>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #000000; }
 /* web end */
