@@ -39,6 +39,7 @@
 	src: url(fonts/BreeSerif-Regular.eot);
 	src: local(※), url(fonts/BreeSerif-Regular.woff)format('woff');
 }
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css); <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'> * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
 
 body,
 div,
@@ -159,7 +160,7 @@ body {
 }
 
 #menu li a:hover {
-	color: #f05828;
+	color: #025ab3;
 	transition: all .7s;
 }
 
@@ -172,22 +173,20 @@ body {
 }
 
 #fullpage #section0 {
-	background-color: /*#dbd5cd;*/ #ff8e45;
+	background: url(images/mainbg.png) no-repeat center center;
+	background-size: cover;
 	width: 100%;
 	height: 100vh;
 	box-sizing: border-box;
 	position: relative;
 }
-#main .pLogo{ 
-	float:left;
-	margin:88px 0 0 260px;
-	width:723px; height:850px; background:url(images/profile1249.png) no-repeat; }
 #main .me{
 	float:right;
-	margin:150px 300px 0 0;
-	width:500px; height:300px;
-	background:url(images/mainText.png) no-repeat;
+	margin:234px 300px 0 0;
+	width:300px; height:300px;
 }
+.me ul{ padding: 10px; }
+.me ul li{ font-size: 16px; font-family: 'SpoqaHanSans', sans-serif; color: #ffffff; }
 .scroll{ position:absolute; bottom:0; left:50%; width:2.5px; height:70px; overflow:hidden; }
 .scroll::before{ content:''; display:block; width:2px; height:100%; position:absolute; left:50%; bottom:0; background-color:#c2c2c2; }  
 .scroll::after{ content:''; display:block; width:2px; height:100%; position:absolute; left:50%; bottom:0; background-color:#ef776e; animation: down 3s infinite ease; }
