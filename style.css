@@ -419,7 +419,7 @@ body {
 	position: relative;
 	top: 0;
 	overflow: hidden;
-	background: url(images/section4bgwhite.png) no-repeat center center;
+	background: url(images/section4bg_white.png) no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 }
