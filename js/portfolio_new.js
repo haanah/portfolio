@@ -6,18 +6,6 @@ $(function () {
 			scrollTop: $(this.hash).offset().top
 		}, 500);
 	});
-	/* $('#toggle').on('click', function (event) {
-		event.preventDefault();
-		if ($('#menu').attr('class') == 'show') {
-			$('#menu').removeClass('show');
-		} else {
-			$('#menu').addClass('show');
-		};
-	});
-	$('#menu').on('click', function (event) {
-		event.preventDefault();
-		$('#menu').removeClass('show');
-	}); */
 	
 	/* 이미지 애니메이션 */
 	$('.imgInnersection2').hover(function () {
