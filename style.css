@@ -106,7 +106,7 @@ a {
 
 body {
 	font-family: 'Agency FB';
-	font-size: 10px;
+	font-size: 1rem;
 	background-color: #fff;
 }
 
@@ -465,7 +465,7 @@ body {
 }
 .uiux-section4>ul{ padding: 20px;}
 .epilogue-section4>ul{ padding: 20px;}
-.concept-section4>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #000000; }
-.uiux-section4>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #000000; }
-.epilogue-section4>ul>li{ font-size:15px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #000000; }
+.concept-section4>ul>li{ font-size:14px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #000000; }
+.uiux-section4>ul>li{ font-size:14px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #000000; }
+.epilogue-section4>ul>li{ font-size:14px; font-family:'Malgun Gothic', sans-serif; line-height:1.5; color: #000000; }
 /* web end */
