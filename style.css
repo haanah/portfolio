@@ -450,8 +450,8 @@ body {
 .imgSubsection4{ width: 300px; height: 400px; float: left; position: relative; left: 1200px; top: 100px;
 -webkit-animation: IMGS 2s linear infinite alternate; }
 @-webkit-keyframes IMGS{
-	from{ left: 1200px; }
-	to{ left: 1220px; }
+	from{ left: 1100px; }
+	to{ left: 1120px; }
 }
 .imgSubsection4 dl{ width: 300px; float: left; }
 .imgSubsection4 dt{ background: #ffffff; color:#007445; padding: 3px 10px; cursor: pointer; font-size: 1.2rem; }
