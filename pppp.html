@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=2, user-scalable=yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<!-- 안드로이드 홈화면 추가시 상단 주소창 제거 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>PPP</title>
+	<style type="text/css">
+		body {
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+			overflow-x: hidden;
+			background: #ffffff;
+		}
+
+		img {
+			border: 0;
+			display: block;
+			margin: 0 auto;
+		}
+
+		a {
+			display: block;
+			width: 46%;
+			height: 10%;
+			float: left;
+			font-family: "나눔바른고딕";
+			font-size: 30px;
+			/*background-color: #eee;*/
+			box-sizing: border-box;
+			/*color: #212121;*/
+			text-decoration: none;
+			text-align: center;
+			padding: 10px;
+		}
+
+		.wrap {
+			width: 1320px;
+			margin: 0 auto;
+		}
+
+		.back {
+			color: #222;
+			/*border: 1px solid;*/
+			/*background-color: #eee;*/
+		}
+		/*.back:hover{ color: #007445; }
+		.back:hover:before{ background-color: #000; }*/
+		.ppp{ color: #222;
+			/* border: 1px solid;
+			border-color: #222222; */
+			float: right;
+		}
+		/*.ppp:hover{ color: #000000; }
+		.ppp:hover:before{ background-color: #000; }*/
+		.wrap_2{ width: 1320px; height: 30px; background: #fcd9a8; margin: 0 auto; clear: left; }
+		
+
+		@media all and (max-width:767px) {
+			img {
+				width: 100%;
+				height: auto;
+			}
+			.back {
+				margin-right: 1%;
+			}
+			.wrap {
+				width: auto;
+			}
+			a {
+				display: block;
+				width: 49%;
+				height: 10%;
+				font-size: 17px;
+			}
+		}
+		@media all and (max-width:1024px) {
+			img {
+				width: 100%;
+				height: auto;
+			}
+			.back {
+				margin-right: 0%;
+			}
+			.wrap {
+				width: auto;
+			}
+			a {
+				display: block;
+				width: 50%;
+				height: 10%;
+				font-size: 17px;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<img src="images/ppppage.png" alt="ppp">
+	<div class="wrap">
+		<a href="index.html" class="back">돌아가기</a>
+		<a href="https://haanah.github.io/ppp/" target="_blank" class="ppp">사이트 이동하기</a>
+	</div>
+	<div class="wrap_2"></div>
+</body>
+
+</html>
